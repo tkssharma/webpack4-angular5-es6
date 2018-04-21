@@ -1,8 +1,13 @@
-
+const path = require('path');
 module.exports = {
     devServer: {
         historyApiFallback: true,//不跳转
-        inline: true//实时刷新
+        inline: true,//实时刷新
+        clientLogLevel: 'warning',
+        hot: true,
+        compress: true,
+        host: 'localhost',
+        port: 8080,
     },
     module: {
         rules: [
