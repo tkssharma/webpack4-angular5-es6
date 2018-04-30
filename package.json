@@ -24,8 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "pro": "webpack --mode production",
-    "server": "webpack-dev-server --output-path ./dist",
-    "start": "webpack-dev-server --devtool eval-source-map --progress --colors --hot --inline --content-base ./dist"
+    "server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
