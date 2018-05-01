@@ -5,11 +5,13 @@ module.exports = {
     devServer: {
         historyApiFallback: true,//不跳转
         inline: true,//实时刷新
-        // clientLogLevel: 'warning',
+        clientLogLevel: 'none',
         // hot: true,
         // compress: true,
         host: 'localhost',
-        port: 8080,
+        port: 8886,
+        publicPath: '/dist/',
+        watchContentBase: true
     },
     module: {
         rules: [
@@ -26,6 +28,10 @@ module.exports = {
                     {loader: 'sass-loader'}
                 ]
             },
+            {
+                test: /\.html$/,
+                use: {loader: 'html-loader'}
+            }
         ]
     },
   };
